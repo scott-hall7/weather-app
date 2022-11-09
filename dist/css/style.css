@@ -1,7 +1,12 @@
+
 *   {
     margin: 0;
     padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.wi {
+    scale: 3.0;
 }
 
 button  {
@@ -68,9 +73,10 @@ header   {
     color: white;
 }
 
-.city-name  {
+#city-name  {
     display: flex;
     justify-content: center;
+    text-align: center;
     width: 100%;
     padding: 10px 0px;
     color:rgb(240, 240, 240)
@@ -130,6 +136,8 @@ header   {
 .temp-selector > .active  {
     transform: scale(1.33);
     color: rgb(255, 255, 255);
+    pointer-events: none;
+    
 }
 
 .temp-selector  button  {

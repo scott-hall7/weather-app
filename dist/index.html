@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/weather-icons.css">
     <script src="main.js" defer></script>
 </head>
 <body>
@@ -18,27 +19,25 @@
             <button type="button" id="search-button">Search</button>
         </form>
         <div class="city-result">
-            <div class="city-name">
-                <h1>Nashville</h1>
-            </div>
+            <h2 id="city-name">Nashville</h1>
             <div class="city-info">
                 <div class="weather-report">
-                    <img src="sun.png">
+                    <i id="wi" class="wi"></i>
                     <p id="weather-text">Sunny</p>
                 </div>
                 <div class="city-info-right">
                     <div class="temp-report">
                         <div class="temp-display">
-                            <p id="temperature">70</p>
-                            <p id="feels-like-temp">Feels like <b>68°</b></p>
+                            <p id="temperature"></p>
+                            <p id="feels-like-temp">Feels like <b id="feels-like-temp-display">x</b>°</p>
                         </div>
                         <div class="temp-selector">
-                            <button type="submit" class="active" id="f-button">°F</button>
-                            <button type="submit" class="" id="c-button">°C</button>
+                            <button type="submit" class="temp-selection active" id="f-button">°F</button>
+                            <button type="submit" class="temp-selection" id="c-button">°C</button>
                         </div>
                     </div>
                     <div class="indicator-report">
-                        <p id="humidity-percent">Humidity: 30%</p>
+                        <p id="humidity-percent">Humidity: %</p>
                     </div>
                 </div>
             </div>
