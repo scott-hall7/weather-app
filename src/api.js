@@ -7,7 +7,7 @@ getCoordinates('nashville');
 //Gets coordinates for inputted city
 export async function getCoordinates(searchedCity) {
 
-    const response = await fetch('http://api.openweathermap.org/geo/1.0/direct?q=' + searchedCity + '&limit=1&appid=e8e4472081188c6fed6d3fafb70a83a0', {mode: 'cors'});
+    const response = await fetch('https://api.openweathermap.org/geo/1.0/direct?q=' + searchedCity + '&limit=1&appid=e8e4472081188c6fed6d3fafb70a83a0', {mode: 'cors'});
     
     try {
         const coordData = await response.json();
