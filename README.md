@@ -20,6 +20,6 @@ Simple Weather is an app that will display the current weather for any searched 
 
 ## Screenshot
 
-![Alt text](https://imgur.com/a/sJoVvyq.png "App Preview")
+![Alt text](https://github.com/scott-hall7/weather-app/blob/main/src/app-preview.png "App Preview")
 
 
