@@ -1,0 +1,153 @@
+
+*   {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.wi {
+    scale: 3.0;
+}
+
+button  {
+    border: none;
+    background:  none;
+}
+
+button:hover    {
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+header   {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: rgb(114, 155, 194);
+    color: white;
+}
+
+.main-content   {
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.city-form  {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    width: 350px;
+}
+
+#search-input   {
+    padding: 10px;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 5px;
+    background-color: rgba(238, 238, 238, 0.171);
+}
+
+#search-button  {
+  background-color: rgba(51, 51, 51, 0.171);
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+
+#search-button:hover  {
+    transform: scale(1.1);
+}
+
+.city-result    {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    border: 10px solid rgb(154, 182, 207);
+    border-radius: 5px;
+    background-color: rgb(84, 127, 167);
+    color: white;
+}
+
+#city-name  {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0px;
+    color:rgb(240, 240, 240)
+}
+
+.city-info    {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.weather-report {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.city-info-right    {
+    display: flex;
+    flex-direction: column;
+}
+
+.temp-report {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.temp-display   {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#temperature    {
+    font-size: 54px;
+}
+
+#feels-like-temp    {
+    font-size: 12px;
+    color:rgb(190, 190, 190);
+}
+
+
+.temp-selector  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    gap: 10px;
+}
+
+.temp-selector > .active  {
+    transform: scale(1.33);
+    color: rgb(255, 255, 255);
+    pointer-events: none;
+    
+}
+
+.temp-selector  button  {
+    font-size: 16px;
+    color: rgb(190, 190, 190);
+    letter-spacing: 0.075em;
+}
+
+.indicator-report {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}

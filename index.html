@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/weather-icons.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1 class="app-name">Simple Weather</h1>
+    </header>
+    <main class="main-content">
+        <form class="city-form" id="city-search" novalidate>
+            <input type="text" id="search-input" placeholder="Search City">
+            <button type="button" id="search-button">Search</button>
+        </form>
+        <div class="city-result">
+            <h2 id="city-name">Nashville</h1>
+            <div class="city-info">
+                <div class="weather-report">
+                    <i id="wi" class="wi"></i>
+                    <p id="weather-text">Sunny</p>
+                </div>
+                <div class="city-info-right">
+                    <div class="temp-report">
+                        <div class="temp-display">
+                            <p id="temperature"></p>
+                            <p id="feels-like-temp">Feels like <b id="feels-like-temp-display">65</b>°</p>
+                        </div>
+                        <div class="temp-selector">
+                            <button type="submit" class="temp-selection active" id="f-button">°F</button>
+                            <button type="submit" class="temp-selection" id="c-button">°C</button>
+                        </div>
+                    </div>
+                    <div class="indicator-report">
+                        <p id="humidity-percent">Humidity: %</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
